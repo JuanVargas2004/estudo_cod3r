@@ -1,13 +1,12 @@
-import Botao from "@/components/botao";
-import Link from "next/link";
+import Pagina from '@/components/template/Pagina';
+import Link from 'next/link';
 
-export default function Home() {
+export default function Home() {  
   return (
 
-    <div className="flex gap-2">
-        <Botao href="/primeiro"/>
-        <Link href="/primeiro">Primeiro Componente</Link>
-    </div>
+      <Pagina>
+        <h1 className='text-4xl font-bold'>Seja Bem Vindo!!!</h1>
+      </Pagina>
 
-  )
+  );
 }

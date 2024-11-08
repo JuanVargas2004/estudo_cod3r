@@ -1,14 +1,9 @@
-// Função Construtora
-
 function Botao(props){
-    this.label = props?.label ?? "AAAAAAA"
+    this.label = props?.label ?? "Ok"
 }
 
-const botaozin = new Botao()
-console.log(botaozin.label)
+const botao1 = new Botao({label: "Salvar"})
+console.log(botao1.label)
 
-const botaozin2 = new Botao("B")
-console.log(botaozin2.label)
-
-const botaozin3 = new Botao({label: "Eae"})
-console.log(botaozin3.label)
+const botao2 = new Botao({label: "Cancelar"})
+console.log(botao2.label)
