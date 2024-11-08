@@ -1,5 +1,5 @@
 import MenuItem from "./MenuItem";
-import { IconHome, IconNumber1, IconNumber2, IconForms} from "@tabler/icons-react";
+import { IconHome, IconNumber1, IconNumber2, IconForms, IconLayout} from "@tabler/icons-react";
 
 export default function Menu(){
     return (
@@ -9,6 +9,7 @@ export default function Menu(){
                 <MenuItem texto="Primeiro Componente" href="/primeiro" icone={<IconNumber1/>}></MenuItem>
                 <MenuItem texto="Componente UseState" href="/contador" icone={<IconNumber2/>}></MenuItem>
                 <MenuItem texto="Formulário" href="/formulario" icone={<IconForms/>}></MenuItem>
+                <MenuItem texto="Layout" href="/layout" icone={<IconLayout></IconLayout>}/>
             </nav>
         </aside>
     );
