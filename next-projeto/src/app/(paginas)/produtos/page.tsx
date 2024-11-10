@@ -10,16 +10,7 @@ export default async function PaginaProdutos(){
             <h1 className="font-black text-xl">Lista de Produtos</h1>
             <div className="flex flex-col gap-5">
                 {produtos.map((produto) => (
-                    <div key={produto.id}>{produto.nome}
-                        <Image
-                            src={produto.imagemUrl}
-                            alt={produto.nome}
-                            width={500}
-                            height={300}
-
-                        />
-                        <p>{produto.descricao}</p>
-                    </div>
+                    <ProdutoItem key={produto.id} produto={produto}/>
                 ))}
             </div>
         </div>
