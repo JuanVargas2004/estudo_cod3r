@@ -8,7 +8,7 @@ export default function Menu(){
                 <MenuItem texto="Início" href="/" icone={<IconHome/>}></MenuItem>
                 <MenuItem texto="Página Não Existe" href="/primeiro" icone={<IconGhost/>}></MenuItem>
                 <MenuItem texto="Layout" href="/layout" icone={<IconLayout></IconLayout>}/>
-                <MenuItem texto="Produtos" href="/contador" icone={<IconBarcode/>}></MenuItem>
+                <MenuItem texto="Produtos" href="/produtos" icone={<IconBarcode/>}></MenuItem>
                 <MenuItem texto="Formulário" href="/formulario" icone={<IconForms/>}></MenuItem>
             </nav>
         </aside>

@@ -9,7 +9,7 @@ export default function Pagina(props: any){
 
             <div className="flex flex-1">
                 <Menu/>
-                <main className="flex-1 p-8 flex justify-center items-center">
+                <main className="flex-1 p-8 flex">
                     {props.children}
                 </main>
             </div>
