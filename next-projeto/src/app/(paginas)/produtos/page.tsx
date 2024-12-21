@@ -1,18 +1,24 @@
-import ProdutoItem from "@/components/produto/ProdutoItem";
-import Image from "next/image";
+import ProdutoItem from "@/components/produto/ProdutoItem"
 import obterProdutos from "@/data/service/obterProdutos"
 
 export default async function PaginaProdutos(){
     const produtos = await obterProdutos()
-    
+
     return (
-        <div className="flex flex-col gap-6">
-            <h1 className="font-black text-xl">Lista de Produtos</h1>
-            <div className="flex flex-col gap-5">
-                {produtos.map((produto) => (
-                    <ProdutoItem key={produto.id} produto={produto}/>
+
+        <div className="w-full flex flex-col items-center">
+
+            <h1 className="text-4xl mb-10 ml-[200px] font-bold">Lista de Produtos</h1>
+
+            <div className="w-full">
+
+                {produtos.map((produtos) => (
+                    <ProdutoItem key={produtos.id} produto={produtos}></ProdutoItem>
                 ))}
+
             </div>
+
         </div>
+
     )
 }

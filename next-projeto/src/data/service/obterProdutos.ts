@@ -1,8 +1,9 @@
 'use server'
+
 import { esperar } from "./utils"
-import produtos from "../constants/produtos"
+import produtos from '../constants/produtos'
 
 export default async function obterProdutos() {
-    await esperar(300)
+    esperar(100)
     return produtos
 }
