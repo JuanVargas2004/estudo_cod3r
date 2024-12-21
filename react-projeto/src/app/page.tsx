@@ -1,12 +1,10 @@
-import Pagina from '@/components/template/Pagina';
-import Link from 'next/link';
+import Cabecalho from "@/components/Cabecalho";
 
-export default function Home() {  
+export default function Home() {
   return (
 
-      <Pagina>
-        <h1 className='text-4xl font-bold'>Seja Bem Vindo!!!</h1>
-      </Pagina>
+    <Cabecalho>
+    </Cabecalho>
 
   );
 }
